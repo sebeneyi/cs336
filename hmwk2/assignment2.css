@@ -1,0 +1,59 @@
+/*this centers and sets the size of the img*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280;
+  height: 120;
+}
+
+/*this positions the search bar the right of the img.
+sets the font, color, dimesions, and font*/
+.searchBar {
+  float: right;
+  position: absolute !important;
+  border: 0;
+  background-color: lightgray;
+  font-family: 'Arial';
+  top: 50px;
+  right: 150px;
+}
+
+/*makes a border for the unordered list.
+colors the div maroon. and centers list items.
+sets the div containing the ul margins */
+div > ul {
+  background-color: maroon;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*styles the list item to vertical display.
+spaces them out. sets text color to white.
+sets font to arial.*/
+li {
+  display: inline;
+  padding-left: 50px;
+  font-size: 2vw;
+  color: white;
+  font-family: 'Arial';
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*when hovering over an list item,
+changes text color to gold*/
+li:hover {
+  color:gold;
+}
+
+/*centers the p element.
+makes the text xxx-large.
+set font to arial*/
+div > p {
+  text-align: center;
+  font-size: xxx-large;
+  font-family: 'Arial';
+}
