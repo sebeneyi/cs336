@@ -1,0 +1,56 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.title{
+  grid-area:main;
+  font-size:2vw;
+}
+
+.subtitle{
+  grid-area:right;
+  font-size:1vw;
+}
+
+.logo-div{
+  grid-area: menu;
+  border-radius:4px;
+  box-shadow: 5px 5px 8px gray;
+}
+
+.logo-shadowed {
+  border-radius:4px;
+}
+
+
+.button{
+  grid-area: footer;
+  background-color: green;
+  color: white;
+  border-color: white;
+  padding-top: 5px;
+  padding-bottom: 18px;
+  box-shadow: 5px 5px 8px gray;
+  font-size:1vw;
+  border-radius:4px;
+  text-align: center;
+}
+
+button:hover{
+  background-color: lightgreen;
+  color: black;
+}
+
+
+.card{
+  display: grid;
+
+  grid-template-columns: 7vw 11vw;
+  grid-template-rows: 26px 15px 2vw;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "menu main"
+    "menu right"
+    "menu footer"
+}
+
