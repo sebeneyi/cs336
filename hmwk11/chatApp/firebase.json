@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/chatapp",
+    "site": "cs336-a7b63",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

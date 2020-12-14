@@ -1,0 +1,25 @@
+<h1>Guess the Square Root game</h1>
+
+<label>Guess the square root of: </label>
+<input type="text" [(ngModel)]="sqrtNum" />
+
+<label> within </label>
+<input type="text" [(ngModel)]="percent" />
+<label> %</label>
+
+<p>
+  <button (click)="randomNum()">Generate Random Number</button>
+</p>
+
+<div *ngIf="isCorrect === false">
+  <label>Enter your guess: </label>
+  <input type="text" [(ngModel)]="guessNum" (keydown.enter)="submit()" />
+</div>
+
+<button *ngIf="isCorrect" (click)="tryAgain()">Try Again!</button>
+
+<ul style="list-style-type:none;">
+  <li *ngFor="let string of feedback; let i = index">
+    {{ string }}
+  </li>
+</ul>

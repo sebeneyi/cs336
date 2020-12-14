@@ -1,0 +1,26 @@
+<div class="banner">
+  <h1> Chat app </h1>
+
+  <label> Enter your name/handle: </label>
+  <input type="text" [(ngModel)]="name" (keyup)="addName()" />
+
+  <label> Pick a color for your posts: </label>
+  <input [(ngModel)]="color" [(colorPicker)]="color" [style.background]="color" (colorPickerClose)="addColor()" />
+</div>
+
+<hr>
+
+<div>
+  <div *ngFor="let string of array">
+    <span>
+      {{string.timestamp.toDate() | date:"medium"}}
+    </span>
+    <span [style.color]="string.color">
+      {{ string.name }}: {{string.message}}
+    </span>
+  </div>
+</div>
+
+
+<label> Enter a message: </label>
+<input type="text" [(ngModel)]="message" (keydown.enter)="add()" />
